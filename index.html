@@ -7,7 +7,7 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
 body{font-family:'Malgun Gothic',sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6;}
-.hero{min-height:100vh;background:linear-gradient(135deg,#2563eb,#1e40af);color:white;display:flex;align-items:center;padding:40px 20px;}
+.hero{min-height:100vh;background:linear-gradient(135deg,#2563eb,#1e40af);color:white;display:flex;align-items:center;justify-content:center;padding:40px 20px;}
 .container{max-width:1200px;margin:auto;width:100%;}
 .hero h1{font-size:3.5rem;margin-bottom:10px;}
 .hero h2{font-size:1.5rem;font-weight:400;margin-bottom:20px;}
@@ -29,6 +29,32 @@ footer{background:#0f172a;color:white;text-align:center;padding:30px;}
     font-weight: 700;
     margin-top: 8px;
 }
+.president-card{
+    background:rgba(255,255,255,0.15);
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:18px;
+    padding:35px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.president-card .candidate-name{
+    font-size:4rem;
+    font-weight:700;
+}
+
+.vice-team{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+.president-name{
+    font-size:4rem;
+    font-weight:700;
+    text-align:center;
+    margin:0 auto;
+    margin-top: 10px;
+}
 </style>
 </head>
 <body>
@@ -44,21 +70,23 @@ footer{background:#0f172a;color:white;text-align:center;padding:30px;}
 <a href="#pledges" class="btn btn-primary">공약 보기</a>
 </div>
 
-<div class="team">
-<div class="card">
+<div class="president-card">
     <h3>학생회장 후보</h3>
-    <p class="candidate-name">이찬주</p>
+    <p class="president-name">이찬주</p>
 </div>
 
-<div class="card">
-    <h3>2학년 부회장 후보</h3>
-    <p class="candidate-name">권준우</p>
-</div>
+<div class="vice-team">
 
-<div class="card">
-    <h3>1학년 부회장 후보</h3>
-    <p class="candidate-name">방준상</p>
-</div>
+    <div class="card">
+        <h3>2학년 부회장 후보</h3>
+        <p class="candidate-name">권준우</p>
+    </div>
+
+    <div class="card">
+        <h3>1학년 부회장 후보</h3>
+        <p class="candidate-name">방준상</p>
+    </div>
+
 </div>
 </div>
 </section>

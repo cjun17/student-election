@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학생회장 선거 홍보 사이트</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+body{font-family:'Malgun Gothic',sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6;}
+.hero{min-height:100vh;background:linear-gradient(135deg,#2563eb,#1e40af);color:white;display:flex;align-items:center;padding:40px 20px;}
+.container{max-width:1200px;margin:auto;width:100%;}
+.hero h1{font-size:3.5rem;margin-bottom:10px;}
+.hero h2{font-size:1.5rem;font-weight:400;margin-bottom:20px;}
+.hero p{max-width:700px;margin-bottom:30px;}
+.buttons{display:flex;gap:15px;flex-wrap:wrap;margin-bottom:40px;}
+.btn{padding:14px 28px;border-radius:12px;text-decoration:none;font-weight:bold;}
+.btn-primary{background:white;color:#1e40af;}
+.btn-outline{border:2px solid white;color:white;}
+.team,.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.card{background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,.25);border-radius:18px;padding:25px;}
+.section{padding:80px 20px;}
+.section-title{text-align:center;font-size:2.2rem;margin-bottom:40px;}
+.white-card{background:white;padding:30px;border-radius:18px;box-shadow:0 10px 25px rgba(0,0,0,.08);}
+.pledge-card{background:white;padding:25px;border-radius:18px;box-shadow:0 10px 25px rgba(0,0,0,.08);}
+footer{background:#0f172a;color:white;text-align:center;padding:30px;}
+@media(max-width:768px){.hero h1{font-size:2.5rem;}}
+.candidate-name{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 8px;
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div class="container">
+<h1>기호 1번 학생회장 후보</h1>
+<h2>학생의 목소리가 학교의 변화가 됩니다.</h2>
+<p>안녕하세요. 학생회장 후보팀입니다. 학생들의 의견을 더 가까이에서 듣고 실현 가능한 변화로 더 나은 학교를 만들기 위해 출마했습니다.</p>
+
+<div class="buttons">
+<a href="#pledges" class="btn btn-primary">공약 보기</a>
+<a href="#reason" class="btn btn-outline">출마 이유</a>
+</div>
+
+<div class="team">
+<div class="card">
+    <h3>학생회장 후보</h3>
+    <p class="candidate-name">이찬주</p>
+</div>
+
+<div class="card">
+    <h3>2학년 부회장 후보</h3>
+    <p class="candidate-name">권준우</p>
+</div>
+
+<div class="card">
+    <h3>1학년 부회장 후보</h3>
+    <p class="candidate-name">방준상</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="reason" class="section">
+<div class="container">
+<h2 class="section-title">출마 이유</h2>
+<div class="white-card">
+<p>
+학생들이 학교생활 속에서 느끼는 불편함을 해결하고,
+더 나은 학교를 만들기 위해 출마했습니다.
+학생들의 의견을 적극적으로 듣고 실현 가능한 공약을 통해
+변화를 만들어 나가겠습니다.
+</p>
+</div>
+</div>
+</section>
+
+<section id="pledges" class="section">
+<div class="container">
+<h2 class="section-title">핵심 공약</h2>
+
+<div class="cards">
+<div class="pledge-card"><h3>📚 학습 환경 개선</h3><p>학습 공간과 시설 개선 추진</p></div>
+<div class="pledge-card"><h3>🍱 급식 의견 수렴</h3><p>정기적인 학생 의견 조사</p></div>
+<div class="pledge-card"><h3>🎉 학교 행사 활성화</h3><p>학생 참여형 행사 확대</p></div>
+<div class="pledge-card"><h3>🗣 건의함 운영</h3><p>학생 의견 전달 체계 강화</p></div>
+<div class="pledge-card"><h3>🏫 시설 개선</h3><p>불편 시설 점검 및 개선 건의</p></div>
+</div>
+</div>
+</section>
+
+<footer>
+학생회장 후보팀 | 함께 만드는 더 나은 학교
+</footer>
+
+</body>
+</html>
